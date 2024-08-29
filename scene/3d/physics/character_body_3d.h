@@ -177,6 +177,8 @@ private:
 	void _set_platform_data(const PhysicsServer3D::MotionCollision &p_collision);
 	void _snap_on_floor(bool p_was_on_floor, bool p_vel_dir_facing_up);
 
+	const double deltaTime = 1.0 / 60.0;
+	
 protected:
 	void _notification(int p_what);
 	static void _bind_methods();
